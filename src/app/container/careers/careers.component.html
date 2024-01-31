@@ -1,2 +1,22 @@
-<app-header></app-header>
-<p>careers works!</p>
+<!-- job-list.component.html -->
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Available Job Openings</h5>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Job Role</th>
+                    <th>Location</th>
+                    <th>Job Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let job of jobs" (click)="onJobClick()">
+                    <td>{{ job.role }}</td>
+                    <td>{{ job.location }}</td>
+                    <td>{{ job.type }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

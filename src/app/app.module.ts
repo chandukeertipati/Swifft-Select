@@ -18,13 +18,16 @@ import { CareersComponent } from './container/careers/careers.component';
 import { LogInComponent } from './shared/log-in/log-in.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { MainLayoutComponent } from './shared/main-layout/main-layout.component';
+import { UserModuleModule } from './container/user-module/user-module.module';
+import { CareersOverviewComponent } from './container/careers-overview/careers-overview.component';
 @NgModule({
   declarations: [
     AppComponent,
     CareersComponent,
     LogInComponent,
     HeaderComponent,
-    MainLayoutComponent
+    MainLayoutComponent,
+    CareersOverviewComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +42,8 @@ import { MainLayoutComponent } from './shared/main-layout/main-layout.component'
     MatSidenavModule,
     MatListModule,
     // FlexLayoutModule,
-    RouterModule
+    RouterModule,
+    UserModuleModule
   ],
   providers: [
     provideClientHydration(),
