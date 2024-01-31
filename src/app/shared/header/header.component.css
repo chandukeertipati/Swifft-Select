@@ -25,17 +25,17 @@ header {
     margin-right: 20px;
   }
   
-  nav ul li:last-child {
+nav ul li:last-child {
     margin-right: 0;
-  }
+}
   
-  nav ul li a {
+nav ul li a {
     text-decoration: none;
     color: #fff;
     transition: color 0.3s ease;
     font-family: sans-serif;
     font-size: 15px;
-  }
+}
   
   nav ul li a:hover {
     color: #ffd700; /* Change to your desired hover color */
