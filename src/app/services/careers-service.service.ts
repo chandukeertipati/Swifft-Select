@@ -14,6 +14,7 @@ export class CareersServiceService {
     { id: 1, role: 'Software Engineer', location: 'New York', type: 'Full-Time' },
     { id: 2, role: 'Data Analyst', location: 'San Francisco', type: 'Contract' },
     { id: 3, role: 'UI/UX Designer', location: 'London', type: 'Remote' },
+    { id: 4, role: 'UI/UX Developer', location: 'Pakistan', type: 'Full-Time' },
     // Add more job data as needed
   ];
 

@@ -12,6 +12,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { ReactiveFormsModule } from '@angular/forms';
 // import { FlexLayoutModule } from '@angular/flex-layout';
 import { RouterModule } from '@angular/router';
 import { CareersComponent } from './container/careers/careers.component';
@@ -20,6 +21,7 @@ import { HeaderComponent } from './shared/header/header.component';
 import { MainLayoutComponent } from './shared/main-layout/main-layout.component';
 import { UserModuleModule } from './container/user-module/user-module.module';
 import { CareersOverviewComponent } from './container/careers-overview/careers-overview.component';
+import { JobApplyFormComponent } from './container/job-apply-form/job-apply-form.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +29,8 @@ import { CareersOverviewComponent } from './container/careers-overview/careers-o
     LogInComponent,
     HeaderComponent,
     MainLayoutComponent,
-    CareersOverviewComponent
+    CareersOverviewComponent,
+    JobApplyFormComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +46,8 @@ import { CareersOverviewComponent } from './container/careers-overview/careers-o
     MatListModule,
     // FlexLayoutModule,
     RouterModule,
-    UserModuleModule
+    UserModuleModule,
+    ReactiveFormsModule
   ],
   providers: [
     provideClientHydration(),

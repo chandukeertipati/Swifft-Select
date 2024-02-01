@@ -1,22 +1,14 @@
-<!-- job-list.component.html -->
-<div class="card">
-    <div class="card-body">
-        <h5 class="card-title">Available Job Openings</h5>
-        <table class="table table-bordered">
-            <thead>
-                <tr>
-                    <th>Job Role</th>
-                    <th>Location</th>
-                    <th>Job Type</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr *ngFor="let job of jobs" (click)="onJobClick()">
-                    <td>{{ job.role }}</td>
-                    <td>{{ job.location }}</td>
-                    <td>{{ job.type }}</td>
-                </tr>
-            </tbody>
-        </table>
+<!-- <h1>Available Job Openings</h1> -->
+<div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="row">
+        <div class="col-md-6">
+            <div *ngFor="let job of jobs" class="card job-card" (click)="goToJobDetail(job.id)">
+                <div class="card-body">
+                    <h6 class="card-title">{{ job.role }}</h6>
+                    <p class="card-text">{{ job.location }}</p>
+                    <p class="card-text">{{ job.type }}</p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

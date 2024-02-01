@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { MainLayoutComponent } from './shared/main-layout/main-layout.component';
 import { CareersComponent } from './container/careers/careers.component';
 import { CareersOverviewComponent } from './container/careers-overview/careers-overview.component';
+import { JobApplyFormComponent } from './container/job-apply-form/job-apply-form.component';
 
 const routes: Routes = [
   {
@@ -14,9 +15,13 @@ const routes: Routes = [
         component: CareersComponent
       },
       {
-        path: "careers-overview",
+        path: "careers-overview/:id",
         component: CareersOverviewComponent
-      }
+      },
+      {
+        path: "job-form",
+        component: JobApplyFormComponent
+      },
     ]
   },
 ];
